@@ -18,8 +18,9 @@ def test_home_endpoint():
 
     assert response.status_code == 200
     assert response.json["message"] == (
-        "AWS CI/CD Pipeline is running!"
-    )
+    "Version 2 - Automated CI/CD Deployment!"
+)
+
 
 def test_health_endpoint():
     client = app.test_client()
