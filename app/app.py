@@ -10,7 +10,7 @@ ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
 @app.route("/")
 def home():
     return jsonify({
-        "message": "AWS CI/CD Pipeline is running!",
+        "message": "Version 2 - Automated CI/CD Deployment!"
         "application": "DevOps Flask Application",
         "version": APP_VERSION,
         "environment": ENVIRONMENT
